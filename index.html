@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function handleClick() {
+        // Menampilkan gambar setelah tombol diklik
+        var imageContainer = document.getElementById('image-container');
+        imageContainer.style.display = 'block'; // Menampilkan gambar yang tersembunyi
+
+        // Mengubah tombol setelah diklik
+        var button = document.getElementById('click-button');
+        button.innerHTML = 'For You';
+        button.disabled = true; // Menonaktifkan tombol setelah diklik
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message-box">
+        <h1>HAPPY BIRTHDAY DINA TANIA RANDINI</h1>
+        <p></p>
+        <button id="click-button" onclick="handleClick()">Klik Sekarang!</button>
+
+        <!-- Gambar yang akan ditampilkan setelah tombol diklik -->
+        <div id="image-container" style="display: none; margin-top: 20px">
+          <img src="file:///C:/Users/62895/Pictures/iCloud%20Photos/Photos/175ff360-8819-4847-8c49-32adbd396a6f.jpg" alt="Birthday Photo" style="width: 100%; border-radius: 10px" />
+          <p>Happy Birthday, Semoga Apa Yang Disemogakan Tercapai. Wish U All The Best ❤️</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <footer>
+      <p>&copy; 2024/2025 All rights reserved.</p>
+    </footer>
+  </body>
+</html>

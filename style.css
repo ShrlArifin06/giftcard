@@ -1,0 +1,134 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up basic body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe6f2; /* Latar belakang lembut dengan warna pink pastel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center; /* Menambahkan penyelarasan teks secara keseluruhan */
+  flex-direction: column; /* Agar konten diatur dalam kolom */
+  overflow: hidden;
+}
+
+/* Container that holds the message */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Message box styling */
+.message-box {
+  background-color: #ffffff;
+  border-radius: 15px; /* Membulatkan sudut lebih besar untuk kesan lembut */
+  padding: 40px 40px 30px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  border: 2px solid #f8c8d0; /* Border halus dengan warna pink muda */
+  transform: scale(1); /* Efek transformasi lembut */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the heading */
+.message-box h1 {
+  color: #ff6f61; /* Warna merah muda lembut yang memberi kesan cinta */
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px; /* Jarak huruf untuk efek tipografi */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk teks */
+}
+
+/* Styling for the paragraph */
+.message-box p {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Button styling */
+.message-box button {
+  background-color: #ff6f61; /* Warna latar belakang merah muda */
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px; /* Sudut tombol yang lebih membulat */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.message-box button:hover {
+  background-color: #ff4d3b; /* Warna merah yang sedikit lebih gelap saat hover */
+  transform: scale(1.1); /* Efek pembesaran sedikit saat tombol disentuh */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Menambahkan bayangan lebih tajam */
+}
+
+/* Button active effect (when clicked) */
+.message-box button:active {
+  transform: scale(0.98); /* Efek klik dengan memperkecil ukuran */
+}
+
+/* Gambar dengan efek fade-in */
+#image-container img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeInImage 2s ease-out forwards 2s; /* Efek gambar muncul */
+}
+
+/* Animasi fade-in untuk container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi fade-in untuk gambar */
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}

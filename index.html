@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Sayang ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="mini">A little surprise for you ✨</span>
+        <h1>Happy Birthday,<br><em>Sayang.</em> ❤️</h1>
+        <p>Hari ini bukan cuma tentang bertambahnya usia kamu,<br>
+        tapi tentang betapa beruntungnya aku bisa mengenal kamu.</p>
+        <button class="btn" onclick="openSurprise()">Buka Surprise 💌</button>
+      </div>
+      <div class="scroll">scroll ↓</div>
+    </section>
+    <section id="surprise" class="section reveal">
+      <div class="section-title">
+        <span>01 — A little story</span>
+        <h2>Untuk seseorang<br><em>yang spesial.</em></h2>
+      </div>
+      <div class="story">
+        <div class="photo-card photo-main">
+          <img src="assets/foto-1.jpg" alt="Foto kamu">
+          <div class="photo-caption">beautiful, inside & out ♡</div>
+        </div>
+        <div class="story-text">
+          <p class="quote">“Aku mungkin nggak selalu pandai mengungkapkan semuanya, tapi aku harap kamu tahu…”</p>
+          <p>Kamu adalah salah satu hal paling indah yang hadir di hidupku.
+          Terima kasih sudah menjadi diri kamu sendiri, terima kasih untuk
+          semua cerita, tawa, perhatian, dan waktu yang kita lewati bersama.</p>
+          <p>Semoga di umur yang baru ini, semua hal baik datang satu per satu.
+          Semoga langkah kamu selalu dimudahkan dan semoga aku masih boleh
+          menemani banyak cerita kamu berikutnya. ❤️</p>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery-section reveal">
+      <div class="section-title center">
+        <span>02 — Little memories</span>
+        <h2>Beberapa hal<br><em>yang ingin aku simpan.</em></h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item tall"><img src="assets/foto-1.jpg" alt="Kenangan 1"></div>
+        <div class="gallery-item"><img src="assets/foto-2.jpg" alt="Kenangan 2"></div>
+        <div class="memory-card">
+          <span>♡</span>
+          <p>“Semoga kita punya lebih banyak foto, lebih banyak cerita, dan lebih banyak alasan untuk tersenyum.”</p>
+        </div>
+      </div>
+    </section>
+    <section class="section video-section reveal">
+      <div class="section-title center">
+        <span>03 — A message for you</span>
+        <h2>Pesan kecil<br><em>khusus untuk kamu.</em></h2>
+      </div>
+      <div class="video-wrap">
+        <div class="video-placeholder">
+          <div class="big-heart">♥</div>
+          <strong>🎥 Video ucapan</strong>
+          <span>Bagian video siap ditambahkan. Upload file MP4 ke repo lalu tambahkan sebagai source video.</span>
+        </div>
+      </div>
+    </section>
+    <section class="letter-section reveal">
+      <div class="letter">
+        <span class="letter-top">A letter for you</span>
+        <h2>Happy Birthday, Sayang ❤️</h2>
+        <p>Selamat ulang tahun untuk perempuan yang selalu punya tempat
+        spesial di hati aku.</p>
+        <p>Aku nggak tahu perjalanan kita ke depannya akan seperti apa,
+        tapi untuk hari ini aku cuma ingin bilang:
+        <strong>aku bersyukur kamu ada.</strong></p>
+        <p>Tetap jadi kamu yang aku kenal. Kejar semua mimpi kamu,
+        jangan takut untuk tumbuh, dan jangan lupa bahwa ada seseorang
+        yang selalu mendoakan kebahagiaan kamu.</p>
+        <p class="signature">With all my love,<br><em>someone who loves you ❤️</em></p>
+      </div>
+    </section>
+    <footer>Made with ❤️ just for you</footer>
+  </main>
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+      <div class="big-heart">♥</div>
+      <h2>Surprise! 🎂</h2>
+      <p>Selamat ulang tahun, sayang.<br>Semoga hari ini seindah senyum kamu.</p>
+      <button class="btn small" onclick="closeModal()">Lanjut ❤️</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
